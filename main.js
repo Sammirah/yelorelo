@@ -29,7 +29,7 @@ function draw() {
             document.getElementById("status").innerHTML = "Status: Objetos Encontrados";
             document.getElementById("numberOfObjects").innerHTML = "Quantidade de Objetos Encontrados" + objects.length
 
-            FileList("#FF0000");
+            fill("#FF0000");
             percent - floor(objects[i].confidence = 100);
             Text(objects[i].label + "" + percent + "%", objects[i].x + 15, objects[i].y + 15);
             noFill();
