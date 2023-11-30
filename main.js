@@ -5,7 +5,7 @@ video = "";
 
 function start() {
     objectDetector = ml5.objectDetector('cocossd', modelLoaded);
-    document.getElementById("status").innerHTML = "Status : Detecting Objects"
+    document.getElementById("Status").innerHTML = "Status : Detecting Objects"
 }
 
 function preload() {
@@ -23,7 +23,7 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 840, 620);
-    if(status != "") {
+    if(Status != "") {
         objectDetector.detect(video, gotResult);
         for (i = 0; i < objects.length; i++) {
             document.getElementById("status").innerHTML = "Status: Objetos Encontrados";
